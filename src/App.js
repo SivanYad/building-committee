@@ -1,12 +1,14 @@
 import React from 'react';
-import { BasicExpenses } from './expenses/BasicExpenses';
+import { ApartmentsGrid } from './apartments/ApartmentsGrid';
+
 import './App.css';
 
 
 function App() {
   return (
+
     <div className="App">
-      <BasicExpenses />
+      <ApartmentsGrid />
     </div>
   );
 }
