@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import useForm from '../hooks/useForm';
+import { v4 as uuidv4 } from 'uuid';
 
 const NewApartmentForm = ({addApartment}) => {
 
     const { handleChange, handleSubmit, values } = useForm();
     
-    addApartment()
+    addApartment({id: uuidv4()})
 
     return (
         <form onSubmit={handleSubmit}>
