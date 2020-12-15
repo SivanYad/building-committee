@@ -19,7 +19,7 @@ const useForm = () => {
         });
     }
 
-    return { handleChagne }
+    return { handleChange }
 }
 
 export default useForm;
