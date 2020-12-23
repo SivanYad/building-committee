@@ -4,7 +4,7 @@ import apartmentsData from './aparments.json';
 import expensesData from './expenses.json';
 import fakeDataProvider from 'ra-data-fakerest';
 import { ApartmentsList } from './ApartmentsList';
-import { ExpenseList } from './expenses';
+import { ExpenseList, ExpenseEdit, ExpenseCreate } from './expenses';
 
 
 const dataProvider = fakeDataProvider({
@@ -14,7 +14,7 @@ const dataProvider = fakeDataProvider({
 
 const App = () => (
   <Admin dataProvider={dataProvider} >
-    <Resource name="expenses" list={ExpenseList} />
+    <Resource name="expenses" list={ExpenseList} edit={ExpenseEdit} create={ExpenseCreate} />
     <Resource name="apartments" list={ApartmentsList} />
   </Admin>
 );
