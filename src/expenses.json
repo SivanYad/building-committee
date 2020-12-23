@@ -1,0 +1,38 @@
+[
+    {
+        "name": "gardner",
+        "sum": 3120,
+        "date": "2019-01-16T14:54:58Z",
+        "isUniqueExpense": false
+    },
+    {
+        "name": "cleaner",
+        "sum": 4800,
+        "date": "2019-05-15T21:05:12Z",
+        "isUniqueExpense": false
+    },
+    {
+        "name": "pests extirmination",
+        "sum": 350,
+        "date": "2019-04-17T02:51:44Z",
+        "isUniqueExpense": false
+    },
+    {
+        "name": "plumbing fix",
+        "sum": 850,
+        "date": "2019-05-15T01:41:14Z",
+        "isUniqueExpense": true
+    },
+    {
+        "name": "electricity",
+        "sum": 755,
+        "date": "2019-09-12T12:58:29Z",
+        "isUniqueExpense": false
+    },
+    {
+        "name": "cleaning supplies",
+        "sum": 300,
+        "date": "2019-09-12T12:58:29Z",
+        "isUniqueExpense": false
+    }
+]

@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
-import useForm from '../hooks/useForm';
+import useForm from './useForm';
 import { v4 as uuidv4 } from 'uuid';
 
 const NewApartmentForm = ({addApartment}) => {
 
-    const { handleChange, handleSubmit, values } = useForm();
+    const { handleChange, values } = useForm();
     
-    addApartment({id: uuidv4()})
+    // addApartment({id: uuidv4()})
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        addApartment({id: uuidv4(), ...values})
+    }
 
     return (
         <form onSubmit={handleSubmit}>

@@ -20,7 +20,9 @@ export const ApartmentsGrid = () => {
     const [apartments, setApartments] = useState(data)
 
     const addApartment = (apartment) => {
-        setApartments([...apartments, apartment]);
+        setApartments((prevApts) => {
+            return [...prevApts, apartment];
+        });
     }
 
     return (
@@ -29,7 +31,7 @@ export const ApartmentsGrid = () => {
                 <DataGrid
                     rows={apartments}
                     columns={columns}
-                    pageSize={12}
+                    pageSize={15}
                     checkboxSelection
                     //contain only rowID's
                     onSelectionChange={(newSelection => { console.log(newSelection) })}

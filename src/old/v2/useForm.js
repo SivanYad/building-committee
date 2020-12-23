@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const useForm = () => {
 
@@ -13,18 +13,15 @@ const useForm = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setValues({
-            ...values,
-            [name]:value
+        setValues((prevValues) => {
+            return {
+                ...prevValues,
+                [name]: value
+            };
         });
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(e.target)
-    }
-
-    return { handleChange, handleSubmit, values }
+    return { handleChange, values }
 }
 
 export default useForm;
